@@ -171,7 +171,7 @@ Alternatively, you can combine the |bind| method with the ``filter`` argument to
 
     # Use this logger first, debug messages are filtered out
     logger = logger.bind(warn_only=True)
-    logger.warn("Initialization in progress")
+    logger.warning("Initialization in progress")
 
     # Then you can use this one to log all messages
     logger = logger.bind(warn_only=False)
